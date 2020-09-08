@@ -1,0 +1,171 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/jasonpereira96}{\LARGE Jason Pereira}} &  \href{mailto:jasonpereira074@gmail.com}{jasonpereira074@gmail.com}\\
+  \href{https://github.com/jasonpereira96}{https://github.com/jasonpereira96} &  +91 9769190949 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Mumbai}{Mumbai, India}
+      {Bachelor of Engineering in Computer Engineering;  GPA: 7.1}{2014 -- 2018}
+  \resumeSubHeadingListEnd
+  \vspace{5mm} %5mm vertical space
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Aliens Art Pvt Limited}{Mumbai, India}
+      {Software Engineer}{February 2020 - June 2020}
+      \resumeItemListStart
+        \resumeItem{Payment gateway integration}
+          {Implemented payment gateway integration for the organization's ed-tech platform.(\href{https://www.learnitlikealiens.com/}{https://www.learnitlikealiens.com/}). Set up automatic payments and subscription plans for customers through Razorpay and Stripe. Technologies used: \textbf{Razorpay/Stripe} SDKs and webhooks.}
+        \resumeItem{Google Analytics Tracking}
+          {Implemented custom tracking and analytics with Google Analytics and analytics.js}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+    \vspace{5mm} %5mm vertical space
+    
+    \resumeSubheading
+      {Vistaar Technologies}{Mumbai, India}
+      {Software Engineer}{July 2018 - September 2019}
+      \resumeItemListStart
+        \resumeItem{Vistaar WebUI Framework}{Worked on enhancements and bug fixes for the Vistaar WebUI Framework. Contributed to all the major releases from 1.6.0.2 to 1.6.0.5 of the WebUI framework.}
+        \resumeItem {UI Design} {Designed and implemented various client-side screens with Sencha’s ExtJS which functioned as the end-users’ primary interface.}
+        \resumeItem {Dashboard Framework} {Designed various features of an in-house Dashboard Framework including a JSON editor, runtime APIs, filesystem and editor intellisense which is based on Vega-Lite. (\href{https://vega.github.io/vega-lite}{https://vega.github.io/vega-lite})}
+        \resumeItem {Build and Deployment}{Wrote build scripts and enhanced the build and deployment process of the WebUI Framework. Scripts were written using Apache ANT.}
+      \resumeItemListEnd
+
+    
+  \resumeSubHeadingListEnd
+  \vspace{5mm} %5mm vertical space
+
+%-----------PROJECTS-----------------
+\section{Github Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Music Player with React and Redux}
+      {A music player with a cool dark theme built with
+    React, Redux and Google Firebase for the backend. You can search for songs by artist or song name.
+    
+    Live Demo: \href{ https://jasonpereira96.github.io/music-player/}{ https://jasonpereira96.github.io/music-player/}}
+    
+    \vspace{5mm} %5mm vertical space
+    
+    \resumeSubItem{Sorting Visualizer with React and Redux}
+      {A visualizer for the common sorting algorithms made with React and Redux. Helps learners actually visualize the algorithms to better understand what’s going on. You can play with the sort speed and the size of the array.
+      
+      Live Demo: \href{https://jasonpereira96.github.io/sorting-visualizer/}{https://jasonpereira96.github.io/sorting-visualizer/}}
+  \resumeSubHeadingListEnd
+
+  \vspace{5mm} %5mm vertical space
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{Languages}{: Javascript, Java, Python, HTML, CSS.}
+    }
+    \item{
+     \textbf{Technologies}{: React, Redux, ExtJS, Vega-Lite.
+    }}
+ \resumeSubHeadingListEnd
+
+
+% -------------------------------------------
+\end{document}
+
+% Template from https://github.com/sb2nov/resume
